@@ -1,8 +1,8 @@
   import './App.css';
-
+  import Home from "./Layout/Home"
 function App() {
   return (
-    <div>samer</div>
+    <Home />
   );
 }
 
