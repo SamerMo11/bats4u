@@ -27,7 +27,7 @@ body{
   background-image: url(./Assets/main/back.webp);
   background-repeat: repeat;
   background-position: top left;
-  
+  position: relative;
   font-family: "Open Sans", sans-serif;
 
 }

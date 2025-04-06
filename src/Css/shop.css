@@ -1,0 +1,123 @@
+.shopHero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url(../Assets/shop/hero.webp); 
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.cardsCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    gap: 10vh;
+    padding-block: 15vh;
+}
+.cardsCont > p{
+    -webkit-text-stroke: .5px var(--color1);
+    color: transparent;
+    /* text-shadow: 0px 10px  50px  var(--color2); */
+    font-size: 60px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.cardsCont .cards{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10vh 0;
+}
+.cardsCont .cards .prodCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 60vh;
+    /* gap: 2vh; */
+    /* background: #ffffff42; */
+}
+.cardsCont .cards .prodCard div{
+    width: 100%;
+    height: 70%;
+}
+.cardsCont .cards .prodCard img{
+    width: 100%;
+    height: 100%;
+    /* aspect-ratio: 1 / 1; */
+}
+.cardsCont .cards .prodCard .texts{
+    width: calc(100% - 20px);
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #ffffff42;
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.cardsCont .cards .prodCard .texts p{
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.cardsCont .cards .prodCard button{
+    text-decoration: none;
+    margin-top: 2vh;
+    background: var(--color2);
+    color: var(--color3);
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: .3s;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.cardsCont .cards .prodCard button::before,
+.cardsCont .cards .prodCard button::after{
+    content: '';
+    position: absolute;
+    width: 105%;
+    height: 105%;
+    background-color: var(--color1);
+    border-radius: 5px;
+    transition: .3s;
+    z-index: -1;
+    transform: translate(-50%,-50%)  scale(0);
+    
+}
+.cardsCont .cards .prodCard button::before{
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+    top: 0%;
+    left: 100%;
+}
+.cardsCont .cards .prodCard button::after{
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
+    top: 100%;
+    left: 0;
+}
+.cardsCont .cards .prodCard button:hover:before{
+    transform: translate(-100%,0%) scale(1);
+
+}
+.cardsCont .cards .prodCard button:hover::after{
+    transform: translate(0%,-100%) scale(1);
+}

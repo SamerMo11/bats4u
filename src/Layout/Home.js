@@ -72,7 +72,7 @@ export default function Home(){
         initial={{opacity:0}}
         animate={{opacity: 1}}
         transition={{duration:1, delay:.2}}
-        className="hero"></motion.div>
+        className="homeHero"></motion.div>
         <div className="sec-1">
             <motion.img
             variants={reveal} initial="hidden" whileInView="visible"
