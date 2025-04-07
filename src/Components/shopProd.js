@@ -1,6 +1,5 @@
 import React from "react";
 import { motion , useAnimation  } from "framer-motion";
-import { useState } from "react";
 
 export default function ShopProd({img , title , price  }) {
 
