@@ -1,0 +1,135 @@
+.aboutHero{
+    width: 100%;
+    height: 130vh;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url(../Assets/about/hero.webp); 
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    scroll-margin-top:10vh ;
+
+    /* background-attachment: fixed; */
+}
+.AboutComp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 100vh;
+}
+.AboutComp img{
+    width: 40%;
+    height: 85%;
+    aspect-ratio: 1/1;
+    perspective: 10px;
+    transform-style: preserve-3d;
+}
+.AboutComp div{
+    display: flex;
+    justify-content: center;
+    /* align-items: end; */
+    flex-direction: column;
+    width: 45%;
+    gap: 3vh;
+}
+.AboutComp div > *{
+    color: var(--color1);
+}
+.AboutComp div h3{
+    font-size: 26px;
+    line-height: 1.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.AboutComp div p{
+    line-height: 1.8em;
+    font-size: 14px;
+    width: 100%;
+    font-style: normal;
+    /* text-align: end; */
+}
+
+
+.doing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    gap: 15vh;
+}
+.doing .img{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.doing .img img{
+    width: 50%;
+    height: 100%;
+}
+.doing .doCont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 50%;
+}
+.doing .doCont .DoingCard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+}
+.doing .doCont .DoingCard .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    width: 30%;
+    background-image: linear-gradient(to right ,var(--color2) ,  var(--color22) );
+    border-radius: 50%;
+    padding: 2%;
+    position: relative;
+    transition: .3s;
+    top: 0;
+}
+.doing .doCont .DoingCard:hover .img{
+    transition: .3s;
+    top: -20px;
+}
+.doing .doCont .DoingCard .img img{
+    width: 80%;
+    height: 80%;
+}
+.doing .doCont .DoingCard .texts{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 60%;
+    gap: 10px;
+}
+.doing .doCont .DoingCard .texts h3{
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 22px;
+}
+.doing .doCont .DoingCard .texts p{
+    font-size: 14px;
+    text-transform: capitalize;
+    line-height: 1.8em;
+    width: 100%;
+    text-align: center;
+}

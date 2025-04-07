@@ -2,6 +2,8 @@
 .foot{
     width: 100%;
     height: 100vh;
+    height: 130vh;
+    margin-top: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,13 +11,17 @@
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
 }
+
 .homeHero{
-    background-image: url(../Assets/home/hero.webp); 
+    background-image: url(../Assets/home/hero.webp);
+    scroll-margin-top:10vh ;
+
 }
 .foot{
     background-image: url(../Assets/home/footer.webp); 
+    height: 90vh;
+    background-attachment: fixed;
 }
 .sec-1{
     width: 100%;
@@ -67,8 +73,8 @@
 }
 .homeComp div a{
     text-decoration: none;
-    background: var(--color2);
-    color: var(--color3);
+    background-image: linear-gradient(to right ,var(--color2) ,  var(--color22) );
+    color: var(--color1);
     border: none;
     border-radius: 5px;
     padding: 15px 20px;
@@ -81,13 +87,15 @@
     z-index: 1;
     overflow: hidden;
 }
+.homeComp div a:hover{
+    color: var(--color3);
+}
 .homeComp div a::before,
 .homeComp div a::after{
     content: '';
     position: absolute;
     width: 105%;
     height: 105%;
-    background-color: var(--color1);
     border-radius: 5px;
     transition: .3s;
     z-index: -1;
@@ -96,6 +104,7 @@
 }
 .homeComp div a::before{
     clip-path: polygon(0 0, 100% 100%, 100% 0);
+    background-color: var(--color1);
     top: 0%;
     left: 100%;
 }
@@ -103,6 +112,7 @@
     clip-path: polygon(0 0, 100% 100%, 0 100%);
     top: 100%;
     left: 0;
+    background-color: var(--color1);
 }
 .homeComp div a:hover:before{
     transform: translate(-100%,0%) scale(1);

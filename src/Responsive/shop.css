@@ -1,0 +1,38 @@
+@media (width < 768px) {
+
+    .cardsCont {
+        width: 90%;
+        gap: 20vw;
+        padding-block: 25vw;
+    }
+    
+    .cardsCont > p {
+    font-size: clamp(3vw, 8vw, 12vw);
+    width: 100%;
+    text-align: center;
+}
+.cardsCont .cards {
+    width: 100%;
+    flex-direction: column;
+    gap: 30vw;
+}
+.cardsCont .cards .prodCard {
+    width: 90%;
+    height: 100vw;
+}
+.cardsCont .cards .prodCard .texts p:nth-child(1) {
+    font-size: clamp(3vw, 6vw, 8vw);
+}
+.cardsCont .cards .prodCard .texts p:nth-child(2) {
+    font-size: clamp(3vw, 8vw, 8vw);
+}
+.cardsCont .cards .prodCard div {
+    height: 60%;
+}
+.cardsCont .cards .prodCard button {
+    margin-top: 4vw;
+    padding: clamp(3vw, 4vw, 7vw);
+    font-size: clamp(3vw, 4vw, 8vw);
+}
+
+}

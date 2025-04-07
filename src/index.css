@@ -7,7 +7,9 @@
 }
 :root{
   --color1: #fff;
-  --color2: #c95922;
+  /* --color2: #c95922; */
+  --color2: #2a82c1;
+  --color22: #be0379;
   --color3: #000;
 }
 body{

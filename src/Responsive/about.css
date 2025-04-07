@@ -1,0 +1,54 @@
+@media (width < 768px) {
+    .AboutComp {
+        flex-direction: column !important;
+        width: 90%;
+        height: auto;
+        gap: 5vw;
+    }
+    .AboutComp img {
+        width: 80%;
+        height: auto;
+    }
+    .AboutComp div{
+        width: 100%;
+        gap: 5vw;
+    }
+    .AboutComp div h3 {
+        font-size: clamp(3vw, 6vw, 12vw);
+        width: 100%;
+        text-align: center;
+    }
+    .AboutComp div p {
+        font-size: clamp(3vw, 4vw, 6vw);
+    }
+    .doing{
+        height: auto;
+        gap: 10vw;
+        margin-block: 30vw;
+        width: 90%;
+    }
+    .doing .img {
+        width: 100%;
+        height: auto;
+    }
+    .doing .doCont {
+        width: 100%;
+        flex-direction: column;
+        gap: 10vw;
+    }
+
+    .doing .doCont .DoingCard {
+        width: 100%;
+        height: 85vw;
+    }
+    .doing .doCont .DoingCard .texts {
+        width: 90%;
+        height: 60%;
+    }
+    .doing .doCont .DoingCard .texts h3 {
+        font-size: clamp(3vw, 7vw, 11vw);
+    }
+    .doing .doCont .DoingCard .texts p {
+        font-size: clamp(2vw, 4vw, 7vw);
+    }
+}
