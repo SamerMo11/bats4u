@@ -50,7 +50,10 @@ export default function Shop() {
         <motion.div 
         className="cardsCont"
         >
-            <p>meet our special products</p>
+            <motion.p
+        variants={reveal} initial="hidden" whileInView="visible"
+            
+            >meet our special products</motion.p>
             <div className="cards">
             {prodCards}
             </div>
