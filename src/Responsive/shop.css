@@ -1,5 +1,7 @@
 @media (width < 768px) {
-
+    .shopHero{
+        height: 60vw;
+    }
     .cardsCont {
         width: 90%;
         gap: 20vw;

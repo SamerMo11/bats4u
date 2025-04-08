@@ -1,9 +1,13 @@
 @media (width < 768px) {
+    .aboutHero{
+        height: 60vw;
+    }
     .AboutComp {
         flex-direction: column !important;
         width: 90%;
         height: auto;
         gap: 5vw;
+        margin-top: 20vw;
     }
     .AboutComp img {
         width: 80%;
@@ -30,6 +34,9 @@
     .doing .img {
         width: 100%;
         height: auto;
+    }
+    .doing .img img {
+        width: 100%;
     }
     .doing .doCont {
         width: 100%;
