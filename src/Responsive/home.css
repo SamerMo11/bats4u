@@ -4,9 +4,13 @@
         height: 60vw;
         background-position: top;
         background-size: 100%;
+        margin-top: 30vw;
+        scroll-margin-top: 60vw ;
+
     }
     .sec-1 {
         height: auto;
+        margin-block: 10vw;
     }
     .homeComp {
         flex-direction: column !important;
@@ -38,7 +42,7 @@
     }
     .sec-2{
         gap: 20vw;
-        padding-block: 20vw;
+        margin-block: 10vw;
     }
     .sec-2 .progCont {
         width: 100%;

@@ -64,7 +64,7 @@ export default function homeComps({img , text1 , text2 , direction = "row" }) {
       >
       <h3>{text1}</h3>
       <p>{text2}</p>
-      <Link to="/">read more</Link>
+      <Link to="/about">read more</Link>
       </motion.div>
     </div>
   );

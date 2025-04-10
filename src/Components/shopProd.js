@@ -1,7 +1,7 @@
 import React from "react";
 import { motion , useAnimation  } from "framer-motion";
 
-export default function ShopProd({img , title , price  }) {
+export default function ShopProd({img , title , price, addToCart  }) {
 
     const isMobile = window.innerWidth <= 768;
 
@@ -35,7 +35,10 @@ export default function ShopProd({img , title , price  }) {
     const handleClick = async () => {
         await controls.start({ scale: 1.3, transition: { duration: 0.1 } });
         await controls.start({ scale: 1, transition: { duration: 0.1 } });
+        addToCart({ img, title, price });
     };
+
+
   return (
     <motion.div
      variants={reveal}
@@ -45,7 +48,7 @@ export default function ShopProd({img , title , price  }) {
         <div><img src={img} alt="Sample" /></div>
             <div className="texts">
             <p>{title}</p>
-            <p>{price}</p>
+            <p>{price} $</p>
             </div>
             <motion.button
       animate={controls}

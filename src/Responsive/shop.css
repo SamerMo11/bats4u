@@ -1,6 +1,8 @@
 @media (width < 768px) {
     .shopHero{
         height: 60vw;
+        margin-top: 30vw;
+        scroll-margin-top: 60vw ;
     }
     .cardsCont {
         width: 90%;

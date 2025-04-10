@@ -3,10 +3,10 @@ import "../Responsive/shop.css"
 import { motion } from "framer-motion"
 import { prods } from "../Data/ShopData/shop"
 import ShopProd from "../Components/shopProd"
-export default function Shop() {
+export default function Shop({ addToCart }) {
 
     const prodCards = prods.map((el)=>
-            <ShopProd key={el.key} img={el.img} title={el.title} price={el.price} /> )
+            <ShopProd key={el.key} img={el.img} title={el.title} price={el.price} addToCart={addToCart} /> )
 
 
     const isMobile = window.innerWidth <= 768;

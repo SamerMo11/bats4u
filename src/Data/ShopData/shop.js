@@ -13,54 +13,54 @@ export const prods = [
         key:"1",
         title:"flame ball stand",
         img: img1,
-        price: "50 $"
+        price: "50"
     },
     {
         key:"2",
         title:"mixed neon ball",
         img: img2,
-        price: "100 $"
+        price: "100"
     },
     {
         key:"3",
         title:"player stand",
         img: img3,
-        price: "60 $"
+        price: "60"
     },
     {
         key:"4",
         title:"blue neon ball",
         img: img4,
-        price: "90 $"
+        price: "90"
     },
     {
         key:"5",
         title:"neon t-Shirt",
         img: img5,
-        price: "120 $"
+        price: "120"
     },
     {
         key:"6",
         title:"neon ariJordan",
         img: img6,
-        price: "70 $"
+        price: "70"
     },
     {
         key:"7",
         title:"white neon basket",
         img: img7,
-        price: "150 $"
+        price: "150"
     },
     {
         key:"8",
         title:"fire ball",
         img: img8,
-        price: "60 $"
+        price: "60"
     },
     {
         key:"9",
         title:"nBA logo",
         img: img9,
-        price: "200 $"
+        price: "200"
     },
 ]

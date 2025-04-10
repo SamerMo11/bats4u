@@ -1,6 +1,8 @@
 @media (width < 768px) {
     .aboutHero{
         height: 60vw;
+        margin-top: 30vw;
+        scroll-margin-top: 60vw ;
     }
     .AboutComp {
         flex-direction: column !important;
