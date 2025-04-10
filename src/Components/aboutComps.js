@@ -66,7 +66,6 @@ export default function AboutComps({img , head , text1 , text2 , text3 , directi
       <p>{text1}</p>
       <p>{text2}</p>
       <p>{text3}</p>
-      {/* <Link to="/">read more</Link> */}
       </motion.div>
     </div>
   );
